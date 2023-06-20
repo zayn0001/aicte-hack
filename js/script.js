@@ -281,7 +281,7 @@ $(document).ready(function() {
   //console.log("asdasdad")
   $.ajax({
       type: "GET",
-      url: "https://github.com/zayn0001/aicte-hack/blob/main/data/data.csv",
+      url: "data.csv",
       dataType: "text",
       success: function(data) {
           //console.log(data)
