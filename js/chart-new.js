@@ -101,7 +101,8 @@ function createCharts(datajson){
             borderWidth: 2,
             data: datas3,
             borderWidth: 1,
-            tension: 0
+            tension: 0.1,
+            pointRadius: 5
           }]
         },
         options: {

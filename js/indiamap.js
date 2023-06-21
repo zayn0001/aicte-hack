@@ -239,11 +239,14 @@ function createMapStatewise(datajson){
 
     polygonTemplate.events.on("hit", function(ev) {
         //console.log(ev.target.dataItem.dataContext.name);
-        createAnalytics(datajson, ev.target.dataItem.dataContext.name)
-        document.getElementById("analytic").click()
-        //console.log(document.getElementById("gotostate"))
-        document.getElementById("gotostate").click()
-        //document.getElementById("section-analytic").focus()
+        if(ev.target.dataItem.dataContext.value != undefined){
+            createAnalytics(datajson, ev.target.dataItem.dataContext.name)
+            document.getElementById("analytic").click()
+            //console.log(document.getElementById("gotostate"))
+            document.getElementById("gotostate").click()
+            //document.getElementById("section-analytic").focus()
+        }
+        
     });
 
 
@@ -258,7 +261,7 @@ function createMapStatewise(datajson){
     chart.maxZoomLevel = 1;
     chart.seriesContainer.draggable = false;
     chart.seriesContainer.resizable = false;
-
+    chart.chartContainer.wheelable = false;
     
     
 }
@@ -371,7 +374,7 @@ function createMapAreas(datajson){
     chart.maxZoomLevel = 1;
     chart.seriesContainer.draggable = false;
     chart.seriesContainer.resizable = false;
-
+    chart.chartContainer.wheelable = false;
     
     
 }
