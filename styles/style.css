@@ -298,6 +298,7 @@ main {
 }
 footer{
   position: relative;
+  margin-left: 20px;
 }
 
 .tabs a.active, .tabs a:hover, .tabs a:focus {
