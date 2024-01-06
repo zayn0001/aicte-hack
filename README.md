@@ -1,0 +1,1 @@
+A dashboard web page in plain HTML and javascript for a hackathon conducted by the All India Council For Technical Education (AICTE) that required us to provide an addition to their existing webpage (https://mscs.dac.gov.in/) analytics based on the details of different documented Co-operative Societies all over India that they provided as a csv file. 
